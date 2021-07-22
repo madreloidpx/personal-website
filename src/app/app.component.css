@@ -1,0 +1,14 @@
+/* color palette:  #FFF3D9, #DC4731, #B8390E, #3B0918*/
+
+button.common-button {
+    background-color: #3B0918;
+    color: #FFF3D9;
+}
+
+h1 {
+    color: #3B0918;
+}
+
+h3 {
+    color: #B8390E;
+}

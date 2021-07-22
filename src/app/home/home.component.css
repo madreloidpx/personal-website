@@ -1,0 +1,8 @@
+/* color palette:  #FFF3D9, #DC4731, #B8390E, #3B0918*/
+
+.home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

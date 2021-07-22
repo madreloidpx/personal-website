@@ -1,0 +1,19 @@
+/* color palette:  #FFF3D9, #DC4731, #B8390E, #3B0918*/
+
+.header-menu {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    background-color: #DC4731;
+}
+
+.menu-item {
+    width: 10%;
+    text-align: center;
+    color: #FFF3D9;
+}
+
+.menu-item:hover {
+    background-color: #FFF3D9;
+    color: #DC4731;
+}
