@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-vertical-card',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vertical-card.component.css', '../app.component.css']
 })
 export class VerticalCardComponent implements OnInit {
+  @Input() title = "";
+  @Input() description = "";
+  @Input() thumbnail = "";
 
   constructor() { }
 
