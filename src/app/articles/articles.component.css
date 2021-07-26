@@ -3,7 +3,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #DC4731;
 }
 
@@ -12,8 +12,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
+    margin: 2%;
 }
 
 .article-container {
-    width: 45%;
+    width: 35vw;
+    margin: 1%;
 }
