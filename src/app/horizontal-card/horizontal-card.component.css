@@ -26,9 +26,11 @@ img.preview-thumbnail {
 
 h3.card-title {
     color: #3B0918;
+    font-family: 'Quattrocento', serif;
 }
 
 p.card-contents {
     font-size: medium;
     color: #DC4731;
+    font-family: 'Oswald', sans-serif;
 }
