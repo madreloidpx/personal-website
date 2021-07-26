@@ -10,8 +10,14 @@
 .article-container {
     width: 30%;
 }
+.article-list {
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+}
 
 .carousel {
     display: flex;
     justify-content: center;
+    align-items: center;
 }

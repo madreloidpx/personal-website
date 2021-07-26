@@ -1,8 +1,12 @@
 <div class="portfolio-container">
     <h1>Featured Works</h1>
     <div class="carousel">
-        <div class="article-container" *ngFor="let article of portfolio">
-            <app-vertical-card [title]="article.title" [description]="article.short_description" [thumbnail]="article.preview_image"></app-vertical-card>
+        <a (click)="previousPage()"><i class='fas fa-angle-left fa-3x'></i></a>
+        <div class="article-list">
+            <div class="article-container" *ngFor="let article of portfolioView">
+                <app-vertical-card [title]="article.title" [description]="article.short_description" [thumbnail]="article.preview_image"></app-vertical-card>
+            </div>
         </div>
+        <a (click)="nextPage()"><i class='fas fa-angle-right fa-3x'></i></a>
     </div>
 </div>
