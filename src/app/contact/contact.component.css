@@ -20,3 +20,8 @@ h3 {
     color: #B8390E;
     font-size: 3vh;
 }
+
+input, textarea, ::placeholder {
+    border-color: #B8390E;
+    color: #B8390E;
+}
