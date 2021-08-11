@@ -15,6 +15,26 @@ h1 {
     margin-bottom: 0%;
 }
 
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #B8390E;
+    font-size: 4vh;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #B8390E;
+    font-size: 3vh;
+}
+
+.service-container > h4 {
+    padding: 0;
+    margin: 5px;
+    font-family: 'Quattrocento', serif;
+    color: #3B0918;
+    font-size: 2vh;
+}
+
 .services-container {
     width: 90vw;
     margin: 5vw;
@@ -32,11 +52,6 @@ h1 {
     width: 30vw;
     padding: 3vw;
     text-align: center;
-}
-
-.service-container > h4 {
-    padding: 0;
-    margin: 2px;
 }
 
 img {
