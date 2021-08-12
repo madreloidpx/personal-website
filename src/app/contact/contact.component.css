@@ -25,3 +25,21 @@ input, textarea, ::placeholder {
     border-color: #B8390E;
     color: #B8390E;
 }
+
+.social-group {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+button.socials {
+    max-width: 10vw;
+    max-height: 10vh;
+    background-color: transparent;
+    border: none;
+}
+
+button.socials > a > img {
+    max-width: 10vw;
+    max-height: 10vh;
+    object-fit: scale-down;
+}
