@@ -24,3 +24,30 @@ p.card-contents {
     color: #DC4731;
     font-family: 'Oswald', sans-serif;
 }
+
+.modal-content {
+    background: #FFF3D9 !important;
+    border: 5px solid #3B0918 !important;
+}
+
+.modal-contents {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-contents > h3 {
+    font-family: 'Quattrocento', serif;
+    color: #3B0918;
+}
+
+.modal-contents > p {
+    font-family: 'Oswald', sans-serif;
+    color: #DC4731;
+}
+
+.modal-contents > img {
+    margin: 2vw;
+}

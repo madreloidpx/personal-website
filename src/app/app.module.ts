@@ -13,6 +13,7 @@ import { ArticlesComponent } from './articles/articles.component';
 import { ContactComponent } from './contact/contact.component';
 import { VerticalCardComponent } from './vertical-card/vertical-card.component';
 import { HorizontalCardComponent } from './horizontal-card/horizontal-card.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HorizontalCardComponent } from './horizontal-card/horizontal-card.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

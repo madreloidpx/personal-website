@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-vertical-card',
@@ -10,9 +11,13 @@ export class VerticalCardComponent implements OnInit {
   @Input() description = "";
   @Input() thumbnail = "";
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+  }
+
+  open(content) {
+    this.modalService.open(content);
   }
 
 }
