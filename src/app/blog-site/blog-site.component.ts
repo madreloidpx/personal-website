@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-blog-site',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-site.component.css']
 })
 export class BlogSiteComponent implements OnInit {
+  articles
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { 
+    this.route.data.subscribe(data => this.articles = data)
+  }
 
   ngOnInit(): void {
+    console.log(this.articles)
   }
 
 }
