@@ -1,1 +1,6 @@
-<p>blog-site works!</p>
+<ng-container *ngFor="let article of articles">
+    <h3>{{article.title}}</h3>
+    <h5>{{article.author}}</h5>
+    <h5>{{article.created_at}}</h5>
+    <p>{{article.content_body}}</p>
+</ng-container>

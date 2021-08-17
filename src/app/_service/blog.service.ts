@@ -14,4 +14,8 @@ export class BlogService {
     getArticles(){
         return this.http.get<any>(`${this.APIURL}`, httpOptions);
     }
+
+    getArticleByIssue(issue_no: number){
+        return this.http.get<any>(`${this.APIURL}/${issue_no}`, httpOptions)
+    }
 }

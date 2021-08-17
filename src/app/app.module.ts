@@ -19,6 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BlogService } from './_service/blog.service';
 
 import { BlogResolver } from './_resolver/blog.resolver';
+import { BlogArticleComponent } from './blog-article/blog-article.component';
+import { ArticleResolver } from './_resolver/article.resolver';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { BlogResolver } from './_resolver/blog.resolver';
     HeaderMenuComponent,
     MainSiteComponent,
     BlogSiteComponent,
+    BlogArticleComponent,
     PortfolioComponent,
     AboutComponent,
     ArticlesComponent,
@@ -42,7 +45,8 @@ import { BlogResolver } from './_resolver/blog.resolver';
   ],
   providers: [
     BlogService,
-    BlogResolver
+    BlogResolver,
+    ArticleResolver,
   ],
   bootstrap: [AppComponent]
 })
