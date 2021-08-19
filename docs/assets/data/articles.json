@@ -1,34 +1,10 @@
 {
     "data": [{
-        "title": "Test Title 1",
+        "title": "Design Patterns",
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
         "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
         "preview_image": "../../assets/img/placeholder.png",
         "collection": [],
-        "url": null
-    }, 
-    {
-        "title": "Test Title 2",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "preview_image": "../../assets/img/placeholder.png",
-        "collection": [],
-        "url": null
-    },
-    {
-        "title": "Test Title 3",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "preview_image": "../../assets/img/placeholder.png",
-        "collection": [],
-        "url": null
-    },
-    {
-        "title": "Test Title 4",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "preview_image": "../../assets/img/placeholder.png",
-        "collection": [],
-        "url": null
+        "url": "http://madreloidpx.github.io/blog/1"
     }]
 }
