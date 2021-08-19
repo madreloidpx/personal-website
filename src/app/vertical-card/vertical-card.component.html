@@ -1,5 +1,7 @@
 <div class="vertical-card-container">
-    <img class="preview-thumbnail" src={{thumbnail}} alt="preview image" />
+    <div class="preview-image-container">
+        <img class="preview-thumbnail" src={{thumbnail}} alt="preview image" />
+    </div>
     <h3 class="card-title">{{title}}</h3>
     <p class="card-contents">{{description}}</p>
     <button class="common-button" (click)="open(content)">View</button>

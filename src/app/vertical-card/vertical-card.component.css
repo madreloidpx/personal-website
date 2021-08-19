@@ -7,11 +7,22 @@
     border: 3px solid #B8390E;
     margin: 5%;
     background-color: #FFF3D9;
+    max-width: 100%;
+    max-height: 60vh;
+}
+
+.preview-image-container {
+    width: 100%;
+    max-height: 30vh;
+    overflow: hidden;
+    border: 3px solid #B8390E;
+    margin: 10px;
 }
 
 img.preview-thumbnail {
     object-fit: scale-down;
-    margin: 1%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h3.card-title {
@@ -56,10 +67,20 @@ p.card-contents {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 50vh;
 }
 
 .image-container {
     margin: 2vw;
     display: flex;
     justify-content: center;
+    max-height: 25vh;
+}
+
+.image-container > img {
+    object-fit: scale-down;
+}
+
+.image-container > img:hover {
+    transform: scale(2.5, 2.5);
 }

@@ -9,6 +9,7 @@
 
 .article-container {
     width: 30%;
+    max-height: 60vh;
 }
 .article-list {
     width: 85vw;
