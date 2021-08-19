@@ -1,6 +1,11 @@
-<ng-container *ngFor="let article of articles">
-    <h3>{{article.title}}</h3>
-    <h5>{{article.author}}</h5>
-    <h5>{{article.created_at}}</h5>
-    <p>{{article.content_body}}</p>
-</ng-container>
+<div class="articles-list-container">
+    <button><a [routerLink]="['/']">Return to Website</a></button>
+    <ng-container *ngFor="let article of articles">
+        <div class="article-container">
+            <h3>{{article.title}} by {{article.author}}</h3>
+            <h5>Created: {{article.created_at}}</h5>
+            <pre>{{article.content_body}}</pre>
+            <button><a [routerLink]="['/blog/', article.issue_no]">Read Full Article</a></button>
+        </div>
+    </ng-container>
+</div>

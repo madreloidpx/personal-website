@@ -21,13 +21,17 @@ export class BlogSiteComponent implements OnInit {
         console.log("user", user)
         let articleObj: Article = {
           url: article["url"],
+          issue_no: article["number"],
           comments_url: article["comments_url"],
           title: article["title"],
           author: user["login"],
           content_body: article["body"],
-          created_at: article["created_at"],
+          created_at: new Date(article["created_at"]),
+          is_owner: article["author_association"] == "OWNER",
         }
-        articleList.push(articleObj)
+        if(articleObj.is_owner == true) {
+          articleList.push(articleObj)
+        }
       }
       this.articles = articleList
     })
