@@ -12,4 +12,9 @@ export class HeaderMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(id) {
+    let el = document.getElementById(id);
+    el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
 }

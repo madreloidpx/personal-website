@@ -2,12 +2,15 @@
 
 .header-menu {
     width: 100%;
+    position: fixed;
     display: flex;
     align-items: stretch;
     background-color: #DC4731;
+    height: 8vh;
+    z-index: 100;
 }
 
-.menu-item {
+.menu-item, .menu-item > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +18,10 @@
     text-align: center;
     color: #FFF3D9;
     font-family: 'Oswald', sans-serif;
+    cursor: pointer;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item:hover > a {
     background-color: #FFF3D9;
     color: #DC4731;
 }
