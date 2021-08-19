@@ -1,34 +1,18 @@
 {
     "data": [{
-        "title": "Test Title 1",
+        "title": "GDEC Integration and Backend Developer",
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
         "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "preview_image": "../../assets/img/placeholder.png",
-        "collection": ["../../assets/img/placeholder.png", "../../assets/img/placeholder.png", "../../assets/img/placeholder.png"],
+        "preview_image": "../../assets/img/gdec/orders.png",
+        "collection": ["../../assets/img/gdec/orders.png"],
         "url": null
     }, 
     {
-        "title": "Test Title 2",
+        "title": "This Website",
         "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
         "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "preview_image": "../../assets/img/placeholder.png",
-        "collection": ["../../assets/img/placeholder.png", "../../assets/img/placeholder.png", "../../assets/img/placeholder.png"],
-        "url": null
-    },
-    {
-        "title": "Test Title 3",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "preview_image": "../../assets/img/placeholder.png",
-        "collection": ["../../assets/img/placeholder.png", "../../assets/img/placeholder.png", "../../assets/img/placeholder.png"],
-        "url": null
-    },
-    {
-        "title": "Test Title 4",
-        "short_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla.",
-        "preview_image": "../../assets/img/placeholder.png",
-        "collection": ["../../assets/img/placeholder.png", "../../assets/img/placeholder.png", "../../assets/img/placeholder.png"],
+        "preview_image": "../../assets/img/madreloidpx/wireframe.png",
+        "collection": ["../../assets/img/madreloidpx/wireframe.png"],
         "url": null
     }]
 }
