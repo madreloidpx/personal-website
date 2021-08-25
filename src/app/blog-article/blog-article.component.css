@@ -3,17 +3,23 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    max-width: 80vw;
     margin: 10vw;
     margin-top: 5vh;
     font-family: 'Oswald', sans-serif;
 }
 
-pre {
+.bodytext {
     margin-top: 5vh;
     max-width: 80vw;
     word-wrap: break-word;
     white-space: pre-wrap;
     text-align: justify;
     font-family: 'Quattrocento', serif;
+}
+
+.blogimg {
+    margin: 5vw;
+    object-fit: scale-down;
+    max-width: 70vw;
 }
