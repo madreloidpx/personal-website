@@ -1,6 +1,0 @@
-<div class="article-container" *ngIf="article && article.is_owner">
-    <h1>{{article.title}}</h1>
-    <h5>By {{article.author}} Posted {{article.created_at}}</h5>
-    <div class="bodytext" [innerHTML]="article.content_body"></div>
-    <button><a [routerLink]="['/blog']">Return to Blog Home</a></button>
-</div>
