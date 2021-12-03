@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,8 +12,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.logo}>
-          <div className={styles.flower}>
-            <svg className={styles.flower} width="200" height="200" viewBox="0 0 269 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className={styles.icon}>
+            <svg className={styles.icon} width="200" height="200" viewBox="0 0 269 269" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="134.5" cy="134.5" r="134" fill="#867CBF" stroke="#2D2940"/>
               <line x1="228.75" y1="38.4196" x2="38.4194" y2="228.75" stroke="#2D2940"/>
               <line x1="40.9573" y1="40.2502" x2="228.75" y2="228.043" stroke="#2D2940"/>
@@ -35,7 +34,7 @@ export default function Home() {
                   <path d="M47.1655 46.6742C50.9789 33.5212 69.0709 2.19172 83.0473 18.6948C99.048 37.5882 56.119 44.9242 47.1655 46.6742Z" stroke="#2D2940"/>
                 </svg>
               </div>
-              <h2><a href="#">About</a></h2>
+              <h2><a href="/about">About</a></h2>
             </li>
             <li className={styles.nav_item}>
               <div className={styles.flower}>
