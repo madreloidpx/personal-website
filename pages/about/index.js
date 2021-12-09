@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 import styles from '../../styles/About.module.css'
 
 const imgLoader = ({src, width, quality}) => { 
-  const router = useRouter();
-  return `${router.basePath}/${src}?w=${width}&q=${quality || 75}` 
+  return `/${src}?w=${width}&q=${quality || 75}` 
 }
 
 export default function About(req, res) {
@@ -22,7 +20,7 @@ export default function About(req, res) {
         <div className={styles.left}>
           <section id="logo" className={styles.logo}>
               <div className={styles.icon}>
-                <Link href="/">
+                <Link href="/" passHref>
                   <svg className={styles.icon} width="35" height="35" viewBox="0 0 269 269" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="134.5" cy="134.5" r="134" fill="#867CBF" stroke="#2D2940"/>
                     <line x1="228.75" y1="38.4196" x2="38.4194" y2="228.75" stroke="#2D2940"/>
@@ -34,7 +32,7 @@ export default function About(req, res) {
           </section>
           <section id="content" className={styles.content}>
             <div className={styles.container}>
-              <Image loader={imgLoader} src="img/Image Placeholder.svg" width={400} height={400}/>
+              <Image loader={imgLoader} src="img/Image Placeholder.svg" width={400} height={400} alt="Image Placeholder for About Me"/>
             </div>
           </section>
         </div>
@@ -55,15 +53,15 @@ export default function About(req, res) {
                 <h2>About</h2>
               </li>
               <li className={styles.middle}>
-                <h3 className={styles.emphasize}>Hi! I'm Aliya</h3>
+                <h3 className={styles.emphasize}>Hi! I&apos;m Aliya</h3>
                 <h3 className={styles.emphasize}>Web Developer</h3>
                 <h3 className={styles.emphasize}>Philippines</h3>
                 <div className={styles.social_links}>
-                  <a target="_blank" href="https://www.behance.net/madreloidpx/"><Image loader={imgLoader} src="img/behance-1.svg" width={50} height={50}/></a>
-                  <a target="_blank" href="https://github.com/madreloidpx"><Image loader={imgLoader} src="img/github.png" width={50} height={50}/></a>
-                  <a target="_blank" href="https://www.linkedin.com/in/madreloidpx/"><Image loader={imgLoader} src="img/linkedin.png" width={50} height={50}/></a>
-                  <a target="_blank" href="https://www.reddit.com/user/madreloidpx"><Image loader={imgLoader} src="img/reddit.png" width={50} height={50}/></a>
-                  <a target="_blank" href="https://twitter.com/madreloidpx"><Image loader={imgLoader} src="img/twitter.png" width={50} height={50}/></a>
+                  <a target="_blank" rel="noreferrer" href="https://www.behance.net/madreloidpx/"><Image loader={imgLoader} src="img/behance-1.svg" width={50} height={50} alt="Behance Social Link"/></a>
+                  <a target="_blank" rel="noreferrer" href="https://github.com/madreloidpx"><Image loader={imgLoader} src="img/github.png" width={50} height={50} alt="Github Social Link"/></a>
+                  <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/madreloidpx/"><Image loader={imgLoader} src="img/linkedin.png" width={50} height={50} alt="LinkedIn Social Link"/></a>
+                  <a target="_blank" rel="noreferrer" href="https://www.reddit.com/user/madreloidpx"><Image loader={imgLoader} src="img/reddit.png" width={50} height={50} alt="Reddit Social Link"/></a>
+                  <a target="_blank" rel="noreferrer" href="https://twitter.com/madreloidpx"><Image loader={imgLoader} src="img/twitter.png" width={50} height={50} alt="Twitter Social Link"/></a>
                 </div>
               </li>
               <li className={styles.lower}>
