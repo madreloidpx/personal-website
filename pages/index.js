@@ -34,7 +34,7 @@ export default function Home() {
                   <path d="M47.1655 46.6742C50.9789 33.5212 69.0709 2.19172 83.0473 18.6948C99.048 37.5882 56.119 44.9242 47.1655 46.6742Z" stroke="#2D2940"/>
                 </svg>
               </div>
-              <h2><a href="/about">About</a></h2>
+              <h2><a href="next/about">About</a></h2>
             </li>
             <li className={styles.nav_item}>
               <div className={styles.flower}>

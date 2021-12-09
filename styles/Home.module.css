@@ -30,6 +30,10 @@
 
 .nav_list {
   border-left: double #867CBF 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
 .nav_item {
