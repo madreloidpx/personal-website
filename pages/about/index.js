@@ -2,10 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../../styles/About.module.css'
-
-const imgLoader = ({src, width, quality}) => { 
-  return `/${src}?w=${width}&q=${quality || 75}` 
-}
+import { imgLoader } from '../../constants/imageLoader'
 
 export default function About(req, res) {
   return (
@@ -50,7 +47,7 @@ export default function About(req, res) {
                     <path d="M47.1655 46.6742C50.9789 33.5212 69.0709 2.19172 83.0473 18.6948C99.048 37.5882 56.119 44.9242 47.1655 46.6742Z" stroke="#2D2940"/>
                   </svg>
                 </div>
-                <h2>About</h2>
+                <h2><Link href="/"><a>About</a></Link></h2>
               </li>
               <li className={styles.middle}>
                 <h3 className={styles.emphasize}>Hi! I&apos;m Aliya</h3>
@@ -75,7 +72,7 @@ export default function About(req, res) {
                     <path d="M47.1655 46.6742C50.9789 33.5212 69.0709 2.19172 83.0473 18.6948C99.048 37.5882 56.119 44.9242 47.1655 46.6742Z" stroke="#2D2940"/>
                   </svg>
                 </div>
-                <a href="#">Works</a>
+                <Link href="/works"><a>Works</a></Link>
               </li>
             </ul>
           </nav>
