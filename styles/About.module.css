@@ -112,10 +112,20 @@
 }
 
 .container {
-    display: flex;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 75vh;
+}
+
+.image_stack_back {
+    position: relative;
+    top: 18%;
+    left: 18%;
+    width: 50%;
+}
+
+.image_stack_top {
+    position: absolute;
+    top: 38%;
+    left: 28%;
+    z-index: 1;
 }

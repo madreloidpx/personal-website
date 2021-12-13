@@ -25,7 +25,12 @@ export default function About(req, res) {
           </section>
           <section id="content" className={styles.content}>
             <div className={styles.container}>
-              <Image loader={imgLoader} src="img/Image Placeholder.svg" width={400} height={400} alt="Image Placeholder for About Me"/>
+              <div className={styles.image_stack_top}>
+                <Image loader={imgLoader} src="img/selfie2.jpg" width={292} height={355} layout="intrinsic" alt="Profile madreloidpx"/>
+              </div>
+              <div className={styles.image_stack_back}>
+                <Image loader={imgLoader} src="img/selfie1.jpg" width={317} height={367} layout="intrinsic" alt="Profile madreloidpx"/>
+              </div>
             </div>
           </section>
         </div>
