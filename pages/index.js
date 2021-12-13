@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { imgLoader } from '../constants/imageLoader'
 
 export default function Home() {
   return (
@@ -14,13 +16,10 @@ export default function Home() {
       <main id="home" className={styles.main}>
         <section id="logo" className={styles.logo}>
           <div className={styles.icon}>
-            <svg className={styles.icon} width="200" height="200" viewBox="0 0 269 269" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="134.5" cy="134.5" r="134" fill="#867CBF" stroke="#2D2940"/>
-              <line x1="228.75" y1="38.4196" x2="38.4194" y2="228.75" stroke="#2D2940"/>
-              <line x1="40.9573" y1="40.2502" x2="228.75" y2="228.043" stroke="#2D2940"/>
-            </svg>
+            <Image loader={imgLoader} src="img/undraw_female_avatar_w3jk 1.svg" width={200} height={200} alt="Logo Placeholder"/>
           </div>
           <h1>MADRELOIDPX</h1>
+          <p>Illustrations by <a href="https://undraw.co/">Undraw</a></p>
         </section>
         <section id="nav" className={styles.nav}>
           <nav className={styles.nav_list}>

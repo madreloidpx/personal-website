@@ -18,11 +18,7 @@ export default function Works(req, res) {
             <section id="logo" className={styles.logo}>
                 <div className={styles.icon}>
                   <Link href="/" passHref>
-                    <svg className={styles.icon} width="35" height="35" viewBox="0 0 269 269" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="134.5" cy="134.5" r="134" fill="#867CBF" stroke="#2D2940"/>
-                      <line x1="228.75" y1="38.4196" x2="38.4194" y2="228.75" stroke="#2D2940"/>
-                      <line x1="40.9573" y1="40.2502" x2="228.75" y2="228.043" stroke="#2D2940"/>
-                    </svg>
+                    <Image loader={imgLoader} src="img/undraw_female_avatar_w3jk 1.svg" width={35} height={35} alt="Logo Placeholder"/>
                   </Link>
                 </div>
                 <h1 className={styles.webname}><Link href="/"><a>MADRELOIDPX</a></Link></h1>
@@ -47,7 +43,7 @@ export default function Works(req, res) {
                       <path d="M47.1655 46.6742C50.9789 33.5212 69.0709 2.19172 83.0473 18.6948C99.048 37.5882 56.119 44.9242 47.1655 46.6742Z" stroke="#2D2940"/>
                     </svg>
                   </div>
-                  <h2><Link href="/"><a>Works</a></Link></h2>
+                  <h2><Link href="/about"><a>Works</a></Link></h2>
                 </li>
                 <li className={styles.middle}></li>
                 <li className={styles.lower}>
