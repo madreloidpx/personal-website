@@ -25,7 +25,7 @@ export default function About(req, res) {
           </section>
           <section id="content" className={styles.content}>
             <div className={styles.container}>
-              <Image loader={imgLoader} src="img/selfie1.jpg" width={292} height={355} layout="intrinsic" alt="Profile madreloidpx"/>
+              <Image loader={imgLoader} src="img/selfie1.JPG" width={292} height={355} layout="intrinsic" alt="Profile madreloidpx"/>
             </div>
           </section>
         </div>
