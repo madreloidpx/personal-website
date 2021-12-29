@@ -15,3 +15,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFEABF;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6667AB;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  color: #B2A5FF;
+}

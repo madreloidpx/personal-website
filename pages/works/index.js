@@ -25,11 +25,9 @@ export default function Works({workData}) {
               <h1 className={styles.webname}><Link href="/"><a>MADRELOIDPX</a></Link></h1>
           </section>
           <section id="content" className={styles.content}>
-            <div className={styles.container}>
               {workData.map(project => (
-                <a className={styles.preview}><Image loader={imgLoader} src="img/Image Placeholder.svg" width={400} height={400} alt={project.description}/></a>
+                <div className={styles.preview}><Image loader={imgLoader} src={project.preview} width={project.width} height={project.height} alt={project.description}/></div>
               ))}
-            </div>
           </section>
         </div>
         <section id="nav" className={styles.nav}>
