@@ -26,7 +26,9 @@ export default function Works({workData}) {
           </section>
           <section id="content" className={styles.content}>
             <div className={styles.container}>
-              <Image loader={imgLoader} src="img/Image Placeholder.svg" width={400} height={400} alt="Image Placeholder for About Me"/>
+              {workData.map(project => (
+                <a className={styles.preview}><Image loader={imgLoader} src="img/Image Placeholder.svg" width={400} height={400} alt={project.description}/></a>
+              ))}
             </div>
           </section>
         </div>
@@ -47,7 +49,9 @@ export default function Works({workData}) {
                 <h2><Link href="/about"><a>Works</a></Link></h2>
               </li>
               <li className={styles.middle}>
-                <a>Peachtot</a>
+                {workData.map(project => (
+                  <a>{project.name}</a>
+                ))}
               </li>
               <li className={styles.lower}>
                 <div className={styles.flower}>
