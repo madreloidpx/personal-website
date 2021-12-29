@@ -26,7 +26,7 @@ export default function Works({workData}) {
           </section>
           <section id="content" className={styles.content}>
               {workData.map(project => (
-                <div className={styles.preview}><Image loader={imgLoader} src={project.preview} width={project.width} height={project.height} alt={project.description}/></div>
+                <div key={project.id} className={styles.preview}><Image loader={imgLoader} src={project.preview} width={project.width} height={project.height} alt={project.description}/></div>
               ))}
           </section>
         </div>
@@ -48,7 +48,7 @@ export default function Works({workData}) {
               </li>
               <li className={styles.middle}>
                 {workData.map(project => (
-                  <a>{project.name}</a>
+                  <a key={project.id}>{project.name}</a>
                 ))}
               </li>
               <li className={styles.lower}>
